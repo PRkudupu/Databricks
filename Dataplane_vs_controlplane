@@ -1,0 +1,30 @@
+The Databricks Platform Architecture is divided into two main planes: the **Control Plane** and the **Data Plane**. Here’s a breakdown of the elements in each:
+
+### **Control Plane**
+- **Managed by Databricks**
+- **Responsibilities**:
+  - **Cluster Management**: Handles the creation, configuration, and termination of clusters.
+  - **Job Management**: Manages job scheduling, execution, and monitoring.
+  - **Notebooks and Libraries**: Stores notebooks, libraries, and other configurations.
+  - **Authentication and Authorization**: Manages user authentication, access control, and permissions.
+  - **Databricks Web Application**: The user interface where users interact with Databricks notebooks, jobs, clusters, etc.
+  - **Monitoring and Logging**: Collects and stores logs, metrics, and monitoring data related to the operation of clusters and jobs.
+
+### **Data Plane**
+- **Managed by the Customer in their Cloud Account**
+- **Responsibilities**:
+  - **Data Storage**: All data, including raw and processed data, is stored in the customer’s cloud account (e.g., AWS S3, Azure Blob Storage, or Google Cloud Storage).
+  - **Compute Resources**: All clusters and compute resources run in the customer’s cloud environment. This includes the VMs or instances where the actual data processing takes place.
+  - **Network Security**: Data Plane resources are within the customer's VPC (Virtual Private Cloud) or VNet (Virtual Network), and they control security groups, subnets, and firewall rules.
+  - **Data Processing**: All data processing, such as executing notebooks, Spark jobs, and ML models, occurs in the Data Plane.
+
+### **Customer’s Cloud Account**
+- **Components**:
+  - **Storage Accounts**: For storing data, including Delta Lake, Parquet files, and other data formats.
+  - **Virtual Machines/Instances**: For running Databricks clusters and other compute resources.
+  - **Networking**: Virtual Networks (VPCs/VNets), subnets, security groups, and other networking components are managed by the customer.
+  - **IAM Roles/Policies**: The customer controls access through IAM roles and policies that define which services and users can access the resources in their cloud account.
+
+In summary:
+- **Control Plane**: Managed by Databricks, responsible for orchestration, management, and monitoring.
+- **Data Plane**: Managed by the customer, responsible for data storage and processing within their cloud account.
