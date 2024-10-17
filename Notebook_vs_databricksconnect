@@ -1,0 +1,43 @@
+The main differences between creating scripts in Databricks notebooks versus using Visual Studio Code with VSConnect (Databricks extension) are as follows:
+
+Databricks Notebooks
+
+Built-in Integration: Databricks notebooks are part of the Databricks environment, providing a seamless integration with the Databricks cluster.
+
+Interactive Development: Allows for interactive data exploration, where users can run cells independently and see results quickly, especially useful for data exploration and iterative development.
+
+Multi-Language Support: You can use multiple languages (Python, Scala, SQL, R) within the same notebook using magic commands (%python, %scala, etc.).
+
+Visualization: Databricks notebooks offer built-in visualization tools for displaying data and charting results easily.
+
+Collaboration: Real-time collaboration is possible in Databricks notebooks, where multiple users can work on the same notebook simultaneously.
+
+Job Scheduling: Notebooks can be scheduled as jobs directly within Databricks, making it easy to automate workflows.
+
+Version Control: Built-in version control within Databricks allows users to track changes at the notebook level, though it’s not as robust as Git-based version control.
+
+
+VS Code with VSConnect (Databricks Extension)
+
+Local Development Environment: Allows for developing Databricks code in the local environment, benefiting from VS Code's robust feature set, such as extensions, debugging, and code linting.
+
+Version Control with Git: Full integration with Git, allowing better version control, branching, and collaboration through code reviews.
+
+Enhanced IDE Features: Offers better autocomplete, refactoring tools, and debugging capabilities, improving development productivity compared to Databricks notebooks.
+
+Offline Development: You can develop scripts offline using VS Code and sync to Databricks later when you're connected to the Databricks environment.
+
+Script Execution: You can run your scripts locally or directly on the Databricks cluster from within VS Code, thanks to the Databricks extension.
+
+File-Based Structure: Unlike notebooks, which are cell-based, VS Code allows you to work with a more traditional script or module-based code structure.
+
+Less Interactive: Lacks the interactivity of notebooks for data exploration, as VS Code is primarily a code editor and not meant for running code interactively like a notebook.
+
+
+Summary
+
+Databricks notebooks are ideal for collaborative, interactive data exploration and for quickly running code on the Databricks cluster.
+
+VS Code with VSConnect provides a more robust coding environment with advanced IDE features, better version control, and support for developing complex scripts or packages but lacks the immediate interactivity of Databricks notebooks.
+
+
