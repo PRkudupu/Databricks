@@ -1,0 +1,31 @@
+Here’s a consolidated prompt to use with ChatGPT (or similar tools) for generating unit test cases for Spark code:
+
+
+---
+
+*Write Spark unit tests to validate the following scenarios:
+
+1. Verify the schema of a DataFrame matches the expected schema, including column names and data types.
+
+
+2. Test a transformation function to ensure it filters out invalid rows based on specified conditions.
+
+
+3. Validate the correctness of an aggregation operation (e.g., groupBy with sum) on a DataFrame.
+
+
+4. Check the handling of null values in a column during transformations (e.g., replacing or dropping them).
+
+
+5. Ensure join operations between two DataFrames produce accurate results, including proper handling of matching rows, nulls, and duplicates.
+
+
+6. Test a user-defined function (UDF) to confirm it processes individual rows correctly and produces the expected output.*
+
+
+
+
+---
+
+This prompt is versatile and encourages testing of core aspects of Spark code in a single request. Let me know if you need further refinement!
+
